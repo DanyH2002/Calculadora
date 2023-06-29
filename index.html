@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CALCULADORA</title>
+    <link rel="stylesheet" href="./calculadora.css">
+</head>
+<body>
+    <header>
+        <nav class="logo"> <img src="./formulamath.png" alt=""></nav>
+        <nav class="titulo"> <h1>MATH</h1> </nav>
+    </header>
+    <section class="caja">
+        <div class="resultado">
+            <div id="valorSuperior"></div>
+            <div id="valorInferior"></div>
+        </div>
+        <article class="teclado">
+            <button type="button" onclick="Operacion('+')" class="signo">+</button>  
+            <button type="button" onclick="Operacion('-')" class="signo">-</button>
+            <button type="button" onclick="Operacion('X')" class="signo">X</button> 
+            <button type="button" onclick="Operacion('/')" class="signo">/</button>
+            <button type="button" onclick="Numero('.')" class="num">.</button>
+
+            <button type="button" onclick="Numero('5')" class="num">5</button>  
+            <button type="button" onclick="Numero('6')" class="num">6</button> 
+            <button type="button" onclick="Numero('7')" class="num">7</button>
+            <button type="button" onclick="Numero('8')" class="num">8</button>
+            <button type="button" onclick="Numero('9')" class="num">9</button>
+            
+            <button type="button" onclick="Numero('4')" class="num">4</button>
+            <button type="button" onclick="Numero('3')" class="num">3</button>
+            <button type="button" onclick="Numero('2')" class="num">2</button>
+            <button type="button" onclick="Numero('1')" class="num">1</button>
+            <button type="button" onclick="Numero('0')" class="num">0</button>  
+           
+            <button type="button" onclick="Calcular()" class="signo" id="igual">=</button>
+            <button type="button" onclick="Limpiar()" class="signo" id="BorrarT">C</button>
+            <button type="button" onclick="Borrar()" class="signo colm" id="borrar">&larr;</button>
+        </article>
+    </section>
+    <script src="./operaciones.js"></script>
+</body>
+</html>
